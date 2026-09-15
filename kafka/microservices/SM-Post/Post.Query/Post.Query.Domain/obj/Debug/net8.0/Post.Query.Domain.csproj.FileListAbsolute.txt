@@ -1,0 +1,17 @@
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/bin/Debug/net8.0/Post.Query.Domain.deps.json
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/bin/Debug/net8.0/Post.Query.Domain.dll
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/bin/Debug/net8.0/Post.Query.Domain.pdb
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/bin/Debug/net8.0/CQRS.Core.dll
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/bin/Debug/net8.0/Post.Common.dll
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/bin/Debug/net8.0/CQRS.Core.pdb
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/bin/Debug/net8.0/Post.Common.pdb
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/Post.Query.Domain.csproj.AssemblyReference.cache
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/Post.Query.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/Post.Query.Domain.AssemblyInfoInputs.cache
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/Post.Query.Domain.AssemblyInfo.cs
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/Post.Query.Domain.csproj.CoreCompileInputs.cache
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/Post.Que.097346E7.Up2Date
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/Post.Query.Domain.dll
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/refint/Post.Query.Domain.dll
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/Post.Query.Domain.pdb
+/Users/alinanoskova/kafka/microservices/SM-Post/Post.Query/Post.Query.Domain/obj/Debug/net8.0/ref/Post.Query.Domain.dll
