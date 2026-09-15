@@ -1,0 +1,60 @@
+using CQRS.Core.Infostructure;
+using Microsoft.AspNetCore.Mvc;
+using Post.Cmd.Api.Command;
+using Post.Cmd.Api.Exceptions;
+using Post.Common.DTOs;
+
+namespace Post.Cmd.Api.Controllers;
+[ApiController]
+[Route("api/v1/[controller]")]
+public class LikePostController : ControllerBase
+{
+    private readonly ILogger<LikePostController> _logger;
+    private readonly ICommandDispatcher _commandDispatcher;
+
+    public LikePostController(ILogger<LikePostController> logger, ICommandDispatcher commandDispatcher)
+    {
+        _logger = logger;
+        _commandDispatcher = commandDispatcher;
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> LikePost(LikePostCommand likePostCommand)
+    {
+        try
+        {
+            likePostCommand.Id = likePostCommand.Id;
+            _logger.LogInformation($"Editing message {likePostCommand.Id}");
+            await _commandDispatcher.SendAsync(likePostCommand);
+            return Ok(new BaseResponse()
+            {
+                Message = "Success",
+            });
+        }
+        catch (InvalidOperationException exception)
+        {
+            _logger.Log(LogLevel.Warning, "Client made a bad request");
+            return BadRequest(new BaseResponse()
+            {
+                Message = exception.Message
+            });
+        }        
+        catch (AggregateNotFoundException exception)
+        {
+            _logger.Log(LogLevel.Warning, "Client passed incorrect id");
+            return BadRequest(new BaseResponse()
+            {
+                Message = exception.Message
+            });
+        }
+        catch (Exception exception)
+        {
+            const string SAFE_ERROR_MESSAGE = "Error while processing request to like a post";
+            _logger.Log(LogLevel.Error, exception, SAFE_ERROR_MESSAGE);
+            return StatusCode(StatusCodes.Status500InternalServerError, new BaseResponse()
+            {
+                Message = SAFE_ERROR_MESSAGE,
+            });
+        }
+    }
+}
